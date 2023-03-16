@@ -1,14 +1,15 @@
-# Welcome to your CDK TypeScript project
+# Summit 2023 CDK Demo
 
-This is a blank project for CDK development with TypeScript.
+Simple CDK infrastructure which creates the following resources:
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+* AWS Lambda with permissions to Amazon Translate service
+* AWS API Gateway connected to AWS Lambda
+
+In the resources folder is an Lambda used to talk to Amazon Translate, as well as an example call.
 
 ## Useful commands
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
 * `cdk deploy`      deploy this stack to your default AWS account/region
 * `cdk diff`        compare deployed stack with current state
 * `cdk synth`       emits the synthesized CloudFormation template
+* `cdk watch`       watch for changes and compile
